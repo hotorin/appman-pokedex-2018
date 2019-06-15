@@ -1,0 +1,131 @@
+div.container {
+  width: 1024px;
+  height: 768px;
+  position: relative;
+}
+
+/* -------------------- Card Section --------------------- */
+/* ------------ SearchCard Section ------------ */
+div.searchResult {
+  padding: 0 2% 0 2%;
+}
+div.cardContainer {
+  display: flex;
+  background-color: #d5d6dc;
+  margin: 1% 0 1% 0;
+  position: relative;
+  box-shadow: 3px 1px 3px 1px #000;
+}
+
+div.cardContainer:hover {
+  box-shadow: 3px 1px 6px 1px #000;
+}
+
+div.cardPicture {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.cardPicture img{
+  height: 60%
+}
+
+div.cardDetail {
+  width: 60%
+}
+
+div.addPokedex {
+  position: absolute;
+  top: 0;
+  right: 10px;
+}
+
+/* -------------------- Content Section --------------------- */
+/* ------------ Header Section ------------ */
+div.content {
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+}
+div.title {
+  display: flex;
+  justify-content: center;
+}
+div.title p {
+  font-size: 2rem;
+}
+/* ------------ My Pokedex Content Section ------------ */
+div.myPokedex {
+  padding: 0 0 5% 0;
+}
+
+/* ------------ Search Pokedex Content Section ------------ */
+div.fullSearchPokedexContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+div.searchPokedex {
+  display: flex;
+  position: absolute;
+  height: 768px;
+  top: 0;
+  width: 1024px;
+  z-index: 3;
+}
+div.searchContainer {
+  width: 90%;
+  height: 90%;
+  overflow: scroll;
+  background-color: white;
+  z-index: 3;
+}
+div.searchBoxContainer {
+  padding: 1% 0 1% 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+input.searchPokedexInput {
+  width: 95%;
+  font-size: 3rem;
+}
+
+div.toCloseModal{
+  background-color: rgb(0,0,0,0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+/* -------------------- Add Section --------------------- */
+
+div.addSection {
+  z-index: 2;
+  position: absolute;
+  bottom: 0;
+  width: 1024px;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+}
+
+div.addButtonSection {
+  width: 5%;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+p.addButtonSection.text {
+  font-size: 3rem;
+  margin: 0;
+}

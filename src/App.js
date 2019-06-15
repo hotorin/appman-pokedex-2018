@@ -44,6 +44,7 @@ class App extends Component {
 
   deleteFromPokedex = (index) => {
     let { pokedex } = this.state;
+    console.log('index :',index);
     pokedex.splice(index, 1);
     this.setState({pokedex});
   }
@@ -125,7 +126,7 @@ class App extends Component {
                 </div>
               </div>
               <div className="addPokedex">
-                <p style={{margin: `0 0 0 5%`, cursor: `pointer`}} onClick={()=>{this.deleteFromPokedex(data)}}>
+                <p style={{margin: `0 0 0 5%`, cursor: `pointer`}} onClick={()=>{this.deleteFromPokedex(key)}}>
                     Delete
                 </p>
               </div>
